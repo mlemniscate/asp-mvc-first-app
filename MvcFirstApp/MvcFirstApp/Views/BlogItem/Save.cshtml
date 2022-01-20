@@ -1,0 +1,28 @@
+﻿@model MvcFirstApp.Models.BlogItem
+@{
+    ViewBag.Title = "Save";
+}
+
+<h2>Save</h2>
+
+<form method="post">
+    <table>
+        <tr>
+            <td>@Html.DisplayFor(c=>c.Titr)</td>
+            <td>عنوان</td>
+            <td><input type="text" name="title" /></td>
+        </tr>
+        <tr>
+            <td>توضیحات</td>
+            <td><input type="text" name="description" /></td>
+        </tr>
+        <tr>
+            <td>لینک</td>
+            <td><input type="text" name="link" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="save" /></td>
+        </tr>
+    </table>
+</form>
+
