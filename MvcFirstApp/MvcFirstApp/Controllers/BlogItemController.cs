@@ -17,13 +17,7 @@ namespace MvcFirstApp.Controllers
         [HttpPost]
         public ActionResult Save(BlogItem item)
         {
-            if(ModelState.IsValid)
-            {
-
-            } else
-            {
-
-            }
+            
             return View();
         }
     }
