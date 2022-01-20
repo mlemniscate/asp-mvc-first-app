@@ -11,12 +11,19 @@ namespace MvcFirstApp.Controllers
     {
         public ActionResult Save()
         {
-            return View();
+            return View(new BlogItem());
         }
 
         [HttpPost]
         public ActionResult Save(BlogItem item)
         {
+            if(ModelState.IsValid)
+            {
+
+            } else
+            {
+
+            }
             return View();
         }
     }

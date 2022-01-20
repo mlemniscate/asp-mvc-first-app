@@ -8,16 +8,22 @@
 <form method="post">
     <table>
         <tr>
-            <td>@Html.DisplayFor(c => c.Titr)</td>
-            <td>@Html.TextBoxFor(c => c.Titr)</td>
+            <td>@Html.LabelFor(c => c.Titr)</td>
+            <td>
+                @Html.TextBoxFor(c => c.Titr)
+                @Html.ValidationMessageFor(c=> c.Titr)
+            </td>
         </tr>
         <tr>
-            <td>@Html.DisplayFor(c => c.Description)</td>
+            <td>@Html.LabelFor(c => c.Description)</td>
             <td>@Html.TextBoxFor(c => c.Description)</td>
         </tr>
         <tr>
-            <td>@Html.DisplayFor(c => c.Link)</td>
-            <td>@Html.TextBoxFor(c => c.Link)</td>
+            <td>@Html.LabelFor(c => c.Link)</td>
+            <td>
+                @Html.TextBoxFor(c => c.Link)
+                @Html.ValidationMessageFor(c=> c.Link)
+            </td>
         </tr>
         <tr>
             <td><input type="submit" value="save" /></td>
