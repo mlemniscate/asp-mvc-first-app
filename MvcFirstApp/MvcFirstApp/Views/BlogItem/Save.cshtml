@@ -8,17 +8,16 @@
 <form method="post">
     <table>
         <tr>
-            <td>@Html.DisplayFor(c=>c.Titr)</td>
-            <td>عنوان</td>
-            <td><input type="text" name="title" /></td>
+            <td>@Html.DisplayFor(c => c.Titr)</td>
+            <td>@Html.TextBoxFor(c => c.Titr)</td>
         </tr>
         <tr>
-            <td>توضیحات</td>
-            <td><input type="text" name="description" /></td>
+            <td>@Html.DisplayFor(c => c.Description)</td>
+            <td>@Html.TextBoxFor(c => c.Description)</td>
         </tr>
         <tr>
-            <td>لینک</td>
-            <td><input type="text" name="link" /></td>
+            <td>@Html.DisplayFor(c => c.Link)</td>
+            <td>@Html.TextBoxFor(c => c.Link)</td>
         </tr>
         <tr>
             <td><input type="submit" value="save" /></td>
