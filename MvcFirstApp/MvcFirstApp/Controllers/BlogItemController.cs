@@ -17,8 +17,7 @@ namespace MvcFirstApp.Controllers
         [HttpPost]
         public ActionResult Save(BlogItem item)
         {
-            
-            return View();
+            return View(item);
         }
     }
 }
