@@ -9,7 +9,7 @@ namespace MvcFirstApp
 {
     public class BlogDbContext : DbContext
     {
-        public BlogDbContext() : base("datasource=.;database=blog;integrated security=true;")
+        public BlogDbContext() : base("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=blog;Data Source=.;")
         {
 
         }

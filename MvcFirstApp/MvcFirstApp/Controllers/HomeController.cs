@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvcFirstApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,16 +11,6 @@ namespace MvcFirstApp.Controllers
     {
         public ActionResult Index()
         {
-            using(BlogDbContext blogDbContext = new BlogDbContext())
-            {
-                blogDbContext.BlogItems.Add(new Models.BlogItem
-                {
-                    Description = "my description",
-                    Link = "my link",
-                    Titr = "my titr"
-                });
-                blogDbContext.SaveChanges();
-            }
             return View();
         }
 

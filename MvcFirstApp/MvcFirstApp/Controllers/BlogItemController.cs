@@ -17,6 +17,14 @@ namespace MvcFirstApp.Controllers
         [HttpPost]
         public ActionResult Save(BlogItem item)
         {
+            using (BlogDbContext blogDbContext = new BlogDbContext())
+            {
+                using (BlogDbContext db = new BlogDbContext())
+                {
+                    db.BlogItems.Add(item);
+                    db.SaveChanges();
+                }
+            }
             return View(item);
         }
     }
